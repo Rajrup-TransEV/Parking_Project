@@ -1,0 +1,128 @@
+/* Dashboard Container */
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #4c70af;
+  color: white;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.profile-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: #f1c40f;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spinner for loading */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4c70af;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Dashboard Item */
+.dashboard-item {
+  margin-bottom: 20px;
+}
+
+.dashboard-item h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.dashboard-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Status Items (Available and Occupied Spaces) */
+.status-item {
+  margin-bottom: 10px;
+}
+
+/* Button Container */
+.button-container {
+  margin-bottom: 20px;
+}
+
+.custom-button {
+  padding: 12px 20px;
+  background-color: #4c70af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #3e649f;
+}
+
+.wallet-button {
+  background-color: #4a90e2;
+}
+
+.wallet-button:hover {
+  background-color: #357ab7;
+}
+
+/* Centered Button */
+.center-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.center-button-container .custom-button {
+  width: 50%; /* 50% width for the centered button */
+}

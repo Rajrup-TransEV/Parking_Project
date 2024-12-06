@@ -1,0 +1,82 @@
+/* Splash Screen Background */
+.splash-content {
+    background-color: #31004F; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Ensure the splash screen takes full screen height */
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove any unwanted margin */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    width: 150px;
+    height: 150px;
+    animation: logoSlideIn 2s ease-out; /* Animation for logo slide-in */
+    margin-bottom: 20px; /* Add space between logo and text */
+  }
+  
+  /* Letter Text Layout */
+  .text-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    visibility: hidden; /* Start with text hidden */
+  }
+  
+  /* Each letter animation */
+  .letter {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 8px;
+    opacity: 0; /* Start with letter hidden */
+    animation: fadeIn 1s forwards;
+  }
+  
+  .letter-p {
+    animation-delay: 2s; /* Delay for letter P */
+  }
+  
+  .letter-a {
+    animation-delay: 2.3s; /* Delay for letter A */
+  }
+  
+  .letter-r {
+    animation-delay: 2.6s; /* Delay for letter R */
+  }
+  
+  .letter-k {
+    animation-delay: 2.9s; /* Delay for letter K */
+  }
+  
+  .letter-y {
+    animation-delay: 3.2s; /* Delay for letter Y */
+  }
+  
+  /* Logo Slide-in Animation */
+  @keyframes logoSlideIn {
+    0% {
+      transform: translateY(1000px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in Animation for Text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Show text after the logo animation completes */
+  .splash-content .text-layout {
+    visibility: visible;
+  }
+  

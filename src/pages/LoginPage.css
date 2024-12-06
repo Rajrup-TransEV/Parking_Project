@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  ion-content {
+    --background: #f4f4f4;  /* Light gray background */
+  }
+  
+  /* Container to center the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Fields Styling */
+  ion-item {
+    --highlight-height: 2px; /* Thin highlight under input */
+    margin-bottom: 15px;
+  }
+  
+  ion-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ion-input {
+    margin-top: 2%;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #f9f9f9;
+    --border-radius: 80px;
+    --box-shadow: none;
+  }
+  
+  /* Error Text Styling */
+  ion-text p {
+    font-size: 14px;
+    color: #ff3b30;  /* Red color for error message */
+    margin-top: 10px;
+  }
+  
+  /* Submit Button */
+  ion-button {
+    margin-top: 20px;
+    --background: #3880ff;  /* Blue background for the button */
+    --border-radius: 8px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    font-weight: bold;
+  }
+  
+  ion-button:disabled {
+    --background: #dcdcdc;  /* Light gray background for disabled button */
+  }
+  
+  /* Adjustments for Mobile Responsiveness */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    ion-label {
+      font-size: 13px;
+    }
+  
+    ion-input {
+      font-size: 14px;
+    }
+  
+    ion-button {
+      font-size: 16px;
+    }
+  }
+  
+  

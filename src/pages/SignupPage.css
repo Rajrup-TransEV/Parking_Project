@@ -1,0 +1,127 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  ion-content {
+    --background: #f4f4f4;  /* Light gray background */
+  }
+  
+  /* Container for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Fields Styling */
+  ion-item {
+    --highlight-height: 2px; /* Thin highlight under input */
+    margin-bottom: 15px;
+  }
+  
+  ion-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #f9f9f9;
+    --border-radius: 8px;
+    --box-shadow: none;
+  }
+  
+  ion-textarea {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #f9f9f9;
+    --border-radius: 8px;
+    --box-shadow: none;
+  }
+  
+  /* Error Text Styling */
+  ion-text p {
+    font-size: 14px;
+    color: #ff3b30;  /* Red color for error message */
+    margin-top: 10px;
+  }
+  
+  /* Submit Button */
+  ion-button {
+    margin-top: 20px;
+    --background: #3880ff;  /* Blue background for the button */
+    --border-radius: 8px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    font-weight: bold;
+  }
+  
+  ion-button:disabled {
+    --background: #dcdcdc;  /* Light gray background for disabled button */
+  }
+  
+  /* Title Styling */
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Link to Login Page */
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #3880ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjustments for Mobile Responsiveness */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    ion-label {
+      font-size: 13px;
+    }
+  
+    ion-input,
+    ion-textarea {
+      font-size: 14px;
+    }
+  
+    ion-button {
+      font-size: 16px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  

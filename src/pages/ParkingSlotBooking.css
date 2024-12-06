@@ -1,0 +1,51 @@
+/* General layout for the parking lot */
+.parking-lot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+    margin: 20px auto; 
+    max-width: 360px; 
+  }
+  .car-slot {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+  }
+  .car-slot.available {
+    background-image: url('src/assets/car-available.png'); /* Image for available car */
+    background-color: #5cb85c; /* Green for available slots */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Red color for occupied slot */
+  .car-slot.occupied {
+    background-image: url('src/assets/car-occupied.png'); /* Image for occupied car */
+    background-color: #d9534f; /* Red for occupied slots */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Enhanced hover effect for realism */
+  .car-slot:hover {
+    transform: scale(1.05) rotateY(5deg); /* Slight scale and rotation for hover effect */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  /* Label for car slot (slot number) */
+  .car-slot-label {
+    position: absolute;
+    top: -10%; /* Position label above the slot */
+    left: 50%;
+    transform: translateX(-50%); /* Center the label */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  

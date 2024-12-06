@@ -1,0 +1,73 @@
+/* ParkingHistory.css */
+.parking-history-container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .header-bar {
+    background-color: #007bff;
+    color: white;
+    padding: 16px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .page-content {
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  
+  .history-card {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car-icon-style {
+    font-size: 32px;
+    color: #007bff;
+  }
+  
+  .parking-location {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .date-status-row {
+    margin-top: 8px;
+  }
+  
+  .time-row {
+    margin-top: 8px;
+  }
+  
+  .status-container {
+    text-align: right;
+  }
+  
+  .status-container .success {
+    color: #28a745;
+  }
+  
+  .status-container .danger {
+    color: #dc3545;
+  }
+  
+  .ion-text-center {
+    text-align: center;
+  }
+  
